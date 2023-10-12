@@ -1,0 +1,27 @@
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.block-navbar a {
+  color: var(--gray) !important ;
+  font-weight: 600;
+  padding: 1.2rem;
+}
+
+.button-account {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  background-color: var(--green);
+  padding: 0.6rem;
+  width: 8.5rem;
+  border-radius: 0.25rem;
+}
+.button-account a {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
