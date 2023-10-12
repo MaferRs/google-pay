@@ -1,2 +1,17 @@
 @charset "utf-8";
-@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.content-hero {
+  margin: 2rem 4rem;
+}
+
+.content-hero section {
+  margin: 6rem 10rem;
+}
