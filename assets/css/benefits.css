@@ -1,14 +1,17 @@
 .block_section-benefits {
+  display: flex;
+  justify-content: space-around;
   background-color: var(--background);
   height: 680px;
 }
 .block_section-benefits h2 {
   font-size: 2.5rem;
-  padding-top: 3rem;
+  padding: 2rem 0;
 }
 .block_benefits-apresentation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 50px;
 }
 
 .block_background-benefits {
@@ -24,9 +27,11 @@
 }
 .block_benefits--title h3 {
   padding-left: 1rem;
+  font-size: 1.4rem;
 }
 .block_benefits p {
   padding: 0.1rem 4rem 0;
+  color: var(--gray);
 }
 .line {
   background-color: var(--lightGray2);
