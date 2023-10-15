@@ -1,0 +1,44 @@
+.block_section-benefits {
+  background-color: var(--background);
+  height: 680px;
+}
+.block_section-benefits h2 {
+  font-size: 2.5rem;
+  padding-top: 3rem;
+}
+.block_benefits-apresentation {
+  display: flex;
+  justify-content: space-around;
+}
+
+.block_background-benefits {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 550px;
+}
+
+.block_benefits--title {
+  display: flex;
+  padding-left: 1rem;
+}
+.block_benefits--title h3 {
+  padding-left: 1rem;
+}
+.block_benefits p {
+  padding: 0.1rem 4rem 0;
+}
+.line {
+  background-color: var(--lightGray2);
+  height: 0.1rem;
+  border: none;
+  width: 400px;
+  margin: 1.5rem 3.5rem;
+}
+
+.icone {
+  width: 40px;
+}
+.card {
+  width: 550px;
+}
