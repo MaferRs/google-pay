@@ -28,9 +28,31 @@
   width: 500px;
   color: var(--gray);
 }
-ul > li {
+
+.list-functionalities > li {
   font-size: 1.1rem;
-  line-height: 2.5rem;
-  width: 500px;
+  line-height: 2rem;
+  width: 550px;
   color: var(--lightGray);
+}
+.list-functionalities--itens::before {
+  content: '•';
+  font-size: 30px;
+  color: var(--blue);
+  padding-right: 1rem;
+}
+
+.list-functionalities--itens:nth-child(2)::before {
+  color: var(--red);
+  content: '•';
+  font-size: 30px;
+  padding-right: 1rem;
+}
+
+.list-functionalities--itens:nth-child(3)::before {
+  color: var(--green);
+}
+
+.list-functionalities--itens:nth-child(4)::before {
+  color: var(--orange);
 }
