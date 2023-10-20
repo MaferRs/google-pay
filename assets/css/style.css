@@ -24,9 +24,21 @@
 }
 
 .logo-google {
-  width: 3%;
+  width: 2rem;
 }
 
 .content-hero {
-  margin: 2.5rem 7rem;
+  margin: 0 auto;
+}
+
+.limite {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.border {
+  border: 2px solid var(--lightGray2);
+  border-radius: 15px;
+  box-shadow: 1px 8px 20px rgba(0, 0, 0, 0.192);
+  padding: 2rem;
 }

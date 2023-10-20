@@ -1,12 +1,13 @@
 .block_feedback {
   display: flex;
   justify-content: center;
-  height: 500px;
+  height: 600px;
+  padding: 3rem;
 }
 
 .block_feedback h3 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 2rem 0 5rem;
 }
 .block_feedback--carrosel {
@@ -23,22 +24,24 @@
 .photo_user {
   width: 60px;
   height: 60px;
-  margin: 10px;
+  margin: 12px;
 }
 
 .background_feedback {
   background-color: var(--background);
   width: 300px;
-  height: 150px;
-  border-radius: 1.2rem;
+  height: 160px;
+  border-radius: 0.8rem;
+  box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.223);
 }
 .background_feedback h4 {
-  padding: 0.5rem 0 0.2rem;
+  padding: 1rem 1rem;
 }
 .background_feedback p {
-  width: 200px;
+  width: 220px;
   font-size: 1rem;
   line-height: 1.5rem;
+  padding: 1rem 1rem 0;
 }
 .button__feedback {
   border: none;

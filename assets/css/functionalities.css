@@ -1,6 +1,11 @@
+.block_section-functionalities {
+  height: 650px;
+  padding-top: 3rem;
+}
+
 .block_section-functionalities-content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -9,30 +14,30 @@
 }
 
 .functionalities__description {
-  padding: 1.5rem 2rem;
-  width: 600px;
+  padding: 1rem 2rem;
+  width: 550px;
 }
 
 .functionalities__description h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .gpay-logo {
-  width: 5.2rem;
+  width: 5rem;
 }
 
 .functionalities__description p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  padding: 2.5rem 0 1rem;
-  width: 500px;
+  padding: 2rem 0 1rem;
+  width: 460px;
   color: var(--gray);
 }
 
 .list-functionalities > li {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 2rem;
-  width: 550px;
+  width: 440px;
   color: var(--lightGray);
 }
 .list-functionalities--itens::before {
