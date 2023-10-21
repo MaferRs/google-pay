@@ -1,4 +1,5 @@
 .block_questions {
+  font-family: var(--font1);
   background-color: var(--background);
   padding: 4rem;
 }
@@ -28,8 +29,8 @@
 }
 
 .block__questions--itens p {
-  width: 50%;
-  padding-bottom: 1.5rem;
+  width: 650px;
+  padding: 0 0 1.5rem 1.6rem;
   color: var(--lightGray);
   font-size: 1rem;
 }

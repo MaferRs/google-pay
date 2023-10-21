@@ -1,5 +1,6 @@
 .block_section-presentation-googlepaycard {
   background-color: var(--background);
+  font-family: var(--font1);
 }
 .block__googlepaycard {
   display: flex;

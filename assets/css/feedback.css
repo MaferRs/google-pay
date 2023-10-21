@@ -1,4 +1,5 @@
 .block_feedback {
+  font-family: var(--font1);
   display: flex;
   justify-content: center;
   height: 630px;

@@ -1,6 +1,7 @@
 .block_section-functionalities {
   height: 650px;
   padding-top: 3rem;
+  font-family: var(--font1);
 }
 
 .block_section-functionalities-content {

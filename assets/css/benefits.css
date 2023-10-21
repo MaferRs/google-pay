@@ -1,16 +1,18 @@
 .block_section-benefits {
   background-color: var(--background);
   height: 680px;
+  font-family: var(--font1);
 }
 
 .block_section-benefits h2 {
   font-size: 2rem;
-  padding: 2rem 0;
+  padding: 2rem 0 2rem 3.5rem;
 }
 .block_benefits-presentation {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1200px;
 }
 
 .block_background-benefits {
