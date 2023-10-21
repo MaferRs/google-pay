@@ -7,10 +7,10 @@
   margin: 2rem 3rem;
 }
 
-.block-navbar a {
-  color: var(--gray) !important ;
+.navbar__item {
+  color: var(--gray);
   font-weight: 600;
-  padding: 1.6rem;
+  padding: 0 2rem 0;
   font-size: 1.1rem;
 }
 

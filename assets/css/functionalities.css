@@ -1,10 +1,16 @@
-.block_section-functionalities {
+.block_functionalities {
   height: 650px;
   padding-top: 3rem;
   font-family: var(--font1);
 }
 
-.block_section-functionalities-content {
+.block_functionalities:hover {
+  max-width: 1000px;
+  transition: ease-in-out 1s;
+  transform: scale(1.1);
+}
+
+.block_functionalities-content {
   display: flex;
   justify-content: space-around;
   align-items: center;

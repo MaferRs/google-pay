@@ -5,7 +5,7 @@
 .block__footer--content {
   display: flex;
   justify-content: space-around;
-  padding: 2.5rem 0;
+  padding: 2rem 0;
 }
 
 .block__redesSociais h5 {
@@ -21,6 +21,8 @@
 
 .titulo__redesSociais {
   padding-left: 1rem;
+  color: var(--lightGray);
+  font-weight: 600;
 }
 
 .block__avatar {
@@ -42,7 +44,11 @@
 }
 .citacao p {
   text-align: right;
-  padding: 0.8rem;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 700;
+}
+.made_by {
+  text-align: center;
+  background-color: var(--background);
+  padding: 0.5rem;
 }
