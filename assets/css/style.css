@@ -45,3 +45,6 @@
   box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.192);
   padding: 2rem;
 }
+fieldset {
+  border: none;
+}
