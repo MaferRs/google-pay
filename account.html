@@ -17,39 +17,51 @@
             <div>
                 <img class="image__people-card" src="assets/src/image/people-card.svg" alt="pessoa segundo um cartão">
             </div>
-            <div class="block__form">
-                <h1 class="title__creatAccount">Criar Conta</h1>
+            <div>
                 <form class="form" action="">
-                    <fieldset>
-                        <label class="label" for="nome">
-                            Nome
-                            <input class="input" type="text" name="nome" id="nome">
-                        </label>
-                        <label class="label" for="sobrenome">
-                            Sobrenome
-                            <input class="input" type="text" name="sobrenome" id="sobrenome">
-                        </label>
+                    <h1 class="title__creatAccount">Criar Conta</h1>
 
-                        <label class="label" for="email">
-                            Email
-                            <input class="input" type="email" name="email" id="email">
-                        </label>
-                        <label class="label" for="senha">
-                            Senha
-                            <input class="input" type="password" name="senha" id="senha">
-                        </label>
-                        <label class="label" for="confirmar">
-                            Confirmar
-                            <input class="input" type="password" name="confirmar" id="confirmar">
-                        </label>
+                    <fieldset>
+                        <label class="label" for="nome"> Nome</label>
+                        <input class="input" type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                        <br>
+
+                        <label class="label" for="sobrenome">Sobrenome</label>
+                        <input class="input" type="text" name="sobrenome" id="sobrenome"
+                            placeholder="Digite seu sobrenome">
+                        <br>
+                        <label class="label" for="email">Email</label>
+                        <br>
+                        <input class="input" type="email" name="email" id="email" placeholder="Digite seu email">
+                        <br>
+
+                        <div class="form__item">
+                            <fieldset>
+                                <label class=" label " for="senha">Senha</label> <br>
+                                <input class="input inputItem" type="password" name="senha" id="senha"
+                                    placeholder="Digite uma senha">
+                            </fieldset>
+
+                            <fieldset>
+                                <label class="label" for="confirmar">Confirmar</label> <br>
+                                <input class="input inputItem" type="password" name="confirmar" id="confirmar"
+                                    placeholder="Confirme a senha">
+                            </fieldset>
+                        </div>
+
+                        <div class="form_button">
+                            <button class="button_form gg">
+                                <img class="button_icon" src="assets/src/icon/google-icon-01.svg" alt="">
+                                <a href="#">Entre com o Google</a>
+                            </button>
+                            <button class="button_form_enter">
+                                <a class="enter_text" href="#">Entrar</a>
+                            </button>
+                        </div>
+
                     </fieldset>
+
                 </form>
-                <button>
-                    <a href="#">Entre com o Google</a>
-                </button>
-                <button>
-                    <a href="#">Entrar</a>
-                </button>
 
             </div>
         </section>
