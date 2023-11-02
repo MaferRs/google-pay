@@ -1,7 +1,7 @@
 a,
 p,
 label {
-  color: var(--lightGray);
+  color: var(--gray);
 }
 .block__creatAccount {
   padding: 4rem;
