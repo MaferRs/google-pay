@@ -16,6 +16,7 @@
 
 .button--questions {
   border: none;
+  cursor: pointer;
   padding-right: 0.6rem;
   background-color: var(--background);
 }

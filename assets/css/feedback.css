@@ -16,6 +16,7 @@
 }
 .block_feedback--carrosel {
   display: flex;
+
   justify-content: center;
   gap: 50px;
 }
@@ -49,6 +50,7 @@
 }
 .button__feedback {
   border: none;
+  cursor: pointer;
   background-color: white;
 }
 .navigation_feedback {
