@@ -5,6 +5,7 @@ label {
 }
 .block__creatAccount {
   padding: 4rem;
+  font-family: var(--font1);
 }
 
 .block__creatAccount--content {
@@ -30,9 +31,11 @@ label {
 
 .label {
   font-size: 1.1rem;
+  color: var(--gray);
+  font-weight: 500;
 }
 .input {
-  margin-bottom: 1rem;
+  margin: 0.3rem 0 2rem;
   padding: 0.5rem;
   border-radius: 5px;
   width: 300px;
@@ -80,6 +83,7 @@ label {
 .enter_text {
   color: var(--white);
   font-weight: 600;
+  font-size: 1rem;
 }
 .button_icon {
   width: 1.5rem;
