@@ -11,7 +11,7 @@
     <meta name="robots" content="index,follow">
     <meta name="author" content="Maria Fernanda">
     <link rel="shortcut icon" href="assets/src/favicon/favicon.svg" type="image/x-icon">
-    <script src="script.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
 
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/header.css">
@@ -140,16 +140,17 @@
             </section>
 
             <section class="block_feedback ">
-                <section class="border">
-                    <div>
-                        <h3 class="feedback_title">Feedbacks dos Clientes </h3>
-                        <ul class="background_feedback ">
-                            <button class="button__feedback">
-                                <img src="assets/src/icon/arrow-left.png" alt="seta esquerda">
-                            </button>
+                <section>
+                    <h3 class=" feedback_title">Feedbacks dos Clientes </h3>
+                    <div class="wrapper">
+                        <button id="left" class="button__feedback">
+                            <img src="assets/src/icon/arrow-left.png" alt="button">
+                        </button>
+                        <ul class="background_feedback">
                             <li class="background_feedback--item">
                                 <div>
-                                    <img class="photo_user" src="assets/src/icon/elipse.png" alt="foto do usuario">
+                                    <img class="photo_user" src="assets/src/icon/elipse.png" alt="foto do usuario"
+                                        draggable="false">
                                 </div>
                                 <div>
                                     <h4>Beatriz Vianna</h4>
@@ -159,7 +160,8 @@
 
                             <li class="background_feedback--item">
                                 <div>
-                                    <img class="photo_user" src="assets/src/icon/elipse.png" alt="foto do usuario">
+                                    <img class="photo_user" src="assets/src/icon/elipse.png" alt="foto do usuario"
+                                        draggable="false">
                                 </div>
                                 <div>
                                     <h4 class="">Maycon Sousa</h4>
@@ -169,26 +171,26 @@
 
                             <li class="background_feedback--item">
                                 <div>
-                                    <img class="photo_user" src="assets/src/icon/elipse.png" alt="foto do usuario">
+                                    <img class="photo_user" src="assets/src/icon/elipse.png" alt="foto do usuario"
+                                        draggable="false">
                                 </div>
                                 <div>
                                     <h4>Verônica Martins</h4>
                                     <p>Tenho usado ele para tudo e não quero nenhum outro.</p>
                                 </div>
                             </li>
-                            <button class="button__feedback">
-                                <img src="assets/src/icon/arrow-right.png" alt="seta direita">
-                            </button>
+
                         </ul>
+                        <button id="rigth" class="button__feedback">
+                            <img src="assets/src/icon/arrow-right.png" alt="button">
+                        </button>
                     </div>
+
                     <div class="navigation_feedback">
                         <span class="navigation_feedback--point"></span>
                         <span class="navigation_feedback--point"></span>
                         <span class="navigation_feedback--point"></span>
                     </div>
-
-
-
                 </section>
             </section>
 
@@ -203,7 +205,8 @@
                                 </button>
                                 <h4>Como faço para obter o cartão de crédito?</h4>
                             </div>
-                            <p>Basta clicar no botão “Abrir Conta”, criar sua conta com nome completo, email e senha. Em
+                            <p class="resposta">Basta clicar no botão “Abrir Conta”, criar sua conta com nome completo,
+                                email e senha. Em
                                 seguida
                                 preencher o formulário para solicitar sua conta e o cartão de crédito.</p>
                         </div>
@@ -215,7 +218,8 @@
                                 </button>
                                 <h4>Como Acompanhar o envio do meu cartão?</h4>
                             </div>
-                            <p>Após criar a conta e preencher o formulário aparecerá uma confirmação e aguardar nosso
+                            <p class="resposta">Após criar a conta e preencher o formulário aparecerá uma confirmação e
+                                aguardar nosso
                                 email para acompanhar a solicitação do cartão de crédito.</p>
                         </div>
                         <hr class="line_questions">
@@ -226,7 +230,7 @@
                                 </button>
                                 <h4>Preciso pagar anuidade desse cartão?</h4>
                             </div>
-                            <p>Não, nosso Gpay não possui anuidade.
+                            <p class="resposta">Não, nosso Gpay não possui anuidade.
                         </div>
                         <hr class="line_questions">
                         <div class="block__questions--itens">
@@ -236,7 +240,8 @@
                                 </button>
                                 <h4>É possível fazer comprar internacionais ?</h4>
                             </div>
-                            <p>Sim, você pode usar o seu cartão para fazer comprar nacionais e internacionais com mais
+                            <p class="resposta">Sim, você pode usar o seu cartão para fazer comprar nacionais e
+                                internacionais com mais
                                 facilidade e com desconto em nossa loja google onde pode encontrar nossos produtos. </p>
                         </div>
 

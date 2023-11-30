@@ -40,3 +40,6 @@
   width: 90%;
   border: 1px solid var(--lightGray2);
 }
+.resposta {
+  display: none;
+}
