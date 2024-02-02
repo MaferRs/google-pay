@@ -1,7 +1,18 @@
-
-
 const swiper = new Swiper('.swiper', {
     slidesPerView: 6,
+
+    breakpoints: {
+
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+        },
+    },
 
     direction: 'horizontal',
     loop: true,
@@ -15,8 +26,6 @@ const swiper = new Swiper('.swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-
-
 });
 
 
@@ -68,6 +77,7 @@ const dataFeedbacks = [
 
 ];
 const swiperWrapper = document.querySelector('.swiper-wrapper');
+
 
 dataFeedbacks.forEach((item) => {
 
