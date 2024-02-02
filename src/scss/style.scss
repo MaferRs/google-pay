@@ -54,9 +54,15 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 6rem;
+  flex-wrap: wrap;
   background-color: var(--background);
   font-family: var(--font1);
   font-family: var(--openSans);
+
+  @media (max-width: 576px) {
+    display: flex;
+    gap: 5rem;
+  }
 
   .box-animation {
     position: relative;
@@ -69,6 +75,10 @@ header {
       font-size: 3.2rem;
       font-weight: 700;
       padding-bottom: 2.5rem;
+
+      @media (max-width: 576px) {
+        font-size: 2rem;
+      }
     }
 
     h3 {
@@ -145,6 +155,7 @@ header {
 .functionalities {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 3.5rem 6rem;
   font-family: var(--openSans);
 
@@ -156,12 +167,24 @@ header {
     width: 35rem;
     height: 28rem;
 
+    @media (max-width: 768px) {
+      margin-bottom: 10rem;
+    }
+
     span {
       font-size: 3.2rem;
       font-weight: 700;
 
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+
       .gpay-logo {
         width: 6.5rem;
+
+        @media (max-width: 768px) {
+          font-size: 3.5rem;
+        }
       }
     }
     p {
@@ -176,6 +199,10 @@ header {
     line-height: 3rem;
     font-weight: 400;
     color: var(--lightGray);
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
 
     &::before {
       content: '•';
@@ -209,11 +236,25 @@ header {
   h2 {
     font-size: 3.2rem;
     padding: 0 7rem;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+      padding: 0 0 6rem 0;
+      text-align: center;
+      order: 1;
+    }
   }
   .container-benefits {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      height: 60rem;
+      order: 2;
+      margin: 0 auto;
+    }
 
     aside {
       display: flex;
@@ -225,6 +266,12 @@ header {
       padding: 2rem;
       margin-top: 1.75rem;
       border-radius: 0.6rem;
+
+      @media (max-width: 768px) {
+        height: 45rem;
+        margin: 3rem 0 1rem;
+        order: 3;
+      }
 
       span {
         display: flex;
@@ -252,7 +299,11 @@ header {
   }
 
   .card {
-    width: 400px;
+    width: 25rem;
+    @media (max-width: 768px) {
+      margin-top: 3rem;
+      width: 22.5rem;
+    }
   }
 
   .card-flip-container {
@@ -301,19 +352,29 @@ header {
   padding: 3.5rem;
   font-family: var(--openSans);
 
+  @media (max-width: 768px) {
+    gap: 1.5rem;
+    height: 45rem;
+  }
+
   h3 {
     font-size: 3.2rem;
     font-weight: 700;
     text-align: center;
     padding: 2.5rem 0;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+      padding: 0;
+    }
   }
 
   .swiper-wrapper {
-    width: 74rem;
-    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 74rem;
+    height: 20rem;
     gap: 3rem;
     margin: 2rem;
 
@@ -321,11 +382,16 @@ header {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 16rem !important;
-      height: 16rem !important;
+      width: 16rem;
+      height: 16rem;
       background-color: var(--background);
       border-radius: 0.5rem;
       box-shadow: var(--shadow);
+
+      @media (max-width: 768px) {
+        max-width: 14rem;
+        height: 16rem;
+      }
 
       img {
         width: 4rem;
@@ -352,6 +418,10 @@ header {
     width: 1rem;
     height: 1.5rem;
     margin: 0 3rem 0;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
@@ -367,6 +437,10 @@ header {
     font-size: 3.2rem;
     font-weight: 700;
     padding-bottom: 2.5rem;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
   }
   .doubts-itens {
     width: 40rem;
@@ -388,6 +462,10 @@ header {
       color: var(--lightGray);
       padding: 1rem 0;
       animation: show 0.5s forwards;
+
+      @media (max-width: 576px) {
+        max-width: 22rem;
+      }
     }
   }
   .line-doubts {
@@ -416,6 +494,11 @@ footer {
     justify-content: space-around;
     align-items: center;
     padding: 2rem 0;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      order: 1;
+    }
 
     .container-social-media {
       display: flex;
@@ -437,13 +520,24 @@ footer {
     .quote {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       gap: 2rem;
+
+      @media (max-width: 768px) {
+        justify-content: center;
+        gap: 3rem;
+      }
 
       .quote-description {
         width: 30rem;
         font-weight: 400;
         line-height: 2rem;
         color: var(--lightGray);
+
+        @media (max-width: 768px) {
+          order: 3;
+          max-width: 25rem;
+        }
 
         q {
           font-size: 1.2rem;
@@ -459,6 +553,11 @@ footer {
       img {
         width: 15rem;
         border-radius: 50%;
+
+        @media (max-width: 768px) {
+          order: 2;
+          margin: 2rem;
+        }
       }
     }
   }
