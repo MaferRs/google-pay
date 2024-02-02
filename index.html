@@ -10,34 +10,25 @@
     <meta name="keywords" content="google, googlepay, gpay, cartão gpay, cartão google" />
     <meta name="robots" content="index,follow">
     <meta name="author" content="Maria Fernanda">
-    <link rel="shortcut icon" href="assets/src/favicon/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="css/style.min.css">
-    <!-- <link rel="stylesheet" href="./assets/css/section.css">
-    <link rel="stylesheet" href="./assets/css/functionalities.css">
-    <link rel="stylesheet" href="./assets/css/benefits.css">
-    <link rel="stylesheet" href="./assets/css/feedback.css">
-    <link rel="stylesheet" href="./assets/css/questions.css">
-    <link rel="stylesheet" href="./assets/css/footer.css"> -->
 
-    <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
-
-
-    <title>Google Pay</title>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="assets/src/icon/google-icon-01.svg" alt="icone da google">
+        <img class="logo" src="assets/icon/google-icon-01.svg" alt="icone da google">
         <nav>
-            <a class="navbar-item" href="#sobre">Sobre GPay</a>
-            <a class="navbar-item" href="#funcionalidades">Funcionalidades</a>
-            <a class="navbar-item" href="#beneficios">Benefícios</a>
-            <a class="navbar-item" href="#duvidas">Dúvidas</a>
+            <a class="navbar-item" href="#about">Sobre GPay</a>
+            <a class="navbar-item" href="#functionalities">Funcionalidades</a>
+            <a class="navbar-item" href="#benefits">Benefícios</a>
+            <a class="navbar-item" href="#doubts">Dúvidas</a>
         </nav>
         <button class="button-account">
-            <a href="#">Abrir Conta</a>
-            <img src="assets/src/icon/icon-usuario.svg" alt="icone de usuario">
+            <a href="account.html">Abrir Conta</a>
+            <img src="assets/icon/icon-usuario.svg" alt="icone de usuario">
         </button>
     </header>
     <main id="about" class="presentation">
@@ -48,17 +39,17 @@
                 Google chegou para te garantir conforto e uma experiência única.</p>
         </div>
         <div class="container-gpay">
-            <img class="card-gpay" src="assets/src/image/card-gpay.png" alt="cartçao frente e verso">
+            <img class="card-gpay" src="assets/image/card-gpay.png" alt="cartçao frente e verso">
         </div>
     </main>
     <section id="functionalities" class="functionalities">
         <div>
-            <img class="smartphone-google" src="assets/src/image/google-pixel-app.svg"
+            <img class="smartphone-google" src="assets/image/google-pixel-app.svg"
                 alt="smartphone google pixel 6A com app na tela">
         </div>
         <div class="container-description">
             <span>Funcionalidades
-                <img class="gpay-logo" src="assets/src/image/Gpay-logo.png">
+                <img class="gpay-logo" src="assets/image/Gpay-logo.png">
             </span>
             <p>O google Pay é a maneira mais rápida e simples de
                 fazer pagamentos em milhões de lugares.</p>
@@ -80,7 +71,7 @@
             <aside>
                 <div>
                     <span>
-                        <img class="icone" src="assets/src/icon/cashback.svg" alt="cashback">
+                        <img class="icone" src="assets/icon/cashback.svg" alt="cashback">
                         Cashback
                     </span>
                     <p>Benefícios de cashback de 1% em todas as compras com o cartão e de 3% em compras e
@@ -90,7 +81,7 @@
 
                 <div>
                     <span>
-                        <img class="icone" src="assets/src/icon/shield.svg" alt="segurança">
+                        <img class="icone" src="assets/icon/shield.svg" alt="segurança">
                         Segurança
                     </span>
                     <p>Google Pay protege suas informações de pagamento e sua conta com uma das
@@ -100,7 +91,7 @@
 
                 <div>
                     <span>
-                        <img class="icone" src="assets/src/icon/cashless-payment 1.svg" alt="praticidade">
+                        <img class="icone" src="assets/icon/cashless-payment 1.svg" alt="praticidade">
                         Praticidade
                     </span>
                     <p>O seu cartão ajuda você a ter uma visão mais clara das suas finanças, pois você pode
@@ -112,190 +103,114 @@
                 <div class="flipper">
                     <div class="front">
                         <div class=" box box-front">
-                            <img class="card" src="assets/src/image/card-front.svg"
-                                alt="cartão de crédito parte da frente">
+                            <img class="card" src="assets/image/card-front.svg" alt="cartão de crédito parte da frente">
                         </div>
                     </div>
                     <div class="back">
                         <div class="box box-back">
-                            <img class="card" src="assets/src/image/card-back.svg"
-                                alt="cartão de crédito parte da frente">
+                            <img class="card" src="assets/image/card-back.svg" alt="cartão de crédito parte da frente">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="block_feedback ">
-        <section>
-            <h3 class=" feedback_title">Feedbacks dos Clientes </h3>
-            <div class="wrapper ">
-                <button id="left" class="button__feedback js-carousel--simple-prev">
-                    <img src="assets/src/icon/arrow-left.png" alt="button">
-                </button>
-                <ul class="block_carrosel js-carousel--simple">
-                    <li class="block_carrosel--item">
-                        <div>
-                            <img class="photo_user" src="assets/src/icon/elipse.png" alt="foto do usuario"
-                                draggable="false">
-                        </div>
-                        <div>
-                            <h4>Beatriz Vianna</h4>
-                            <p>Eu amei o cartão, muito prático e facilitou muito minha vida.</p>
-                        </div>
-                    </li>
-
-                    <li class="block_carrosel--item">
-                        <div>
-                            <img class="photo_user" src="assets/src/icon/elipse.png" alt="foto do usuario"
-                                draggable="false">
-                        </div>
-                        <div>
-                            <h4 class="">Maycon Sousa</h4>
-                            <p>Facilitou minhas compras internacionais.</p>
-                        </div>
-                    </li>
-
-                    <li class="block_carrosel--item">
-                        <div>
-                            <img class="photo_user" src="assets/src/icon/elipse.png" alt="foto do usuario"
-                                draggable="false">
-                        </div>
-                        <div>
-                            <h4>Verônica Martins</h4>
-                            <p>Tenho usado ele para tudo e não quero nenhum outro.</p>
-                        </div>
-                    </li>
-                    <li class="block_carrosel--item">
-                        <div>
-                            <img class="photo_user" src="assets/src/icon/elipse.png" alt="foto do usuario"
-                                draggable="false">
-                        </div>
-                        <div>
-                            <h4>Verônica Martins</h4>
-                            <p>Tenho usado ele para tudo e não quero nenhum outro.</p>
-                        </div>
-                    </li>
-                    <li class="block_carrosel--item">
-                        <div>
-                            <img class="photo_user" src="assets/src/icon/elipse.png" alt="foto do usuario"
-                                draggable="false">
-                        </div>
-                        <div>
-                            <h4>Verônica Martins</h4>
-                            <p>Tenho usado ele para tudo e não quero nenhum outro.</p>
-                        </div>
-                    </li>
-
-
-
-                </ul>
-                <button id="rigth" class="button__feedback js-carousel--simple-next"">
-                            <img src=" assets/src/icon/arrow-right.png" alt="button">
-                </button>
+    <section class="feedback">
+        <h3>Feedbacks dos Clientes </h3>
+        <div>
+            <img class="swiper-button-prev" src="assets/icon/arrow-left.png" alt="">
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
             </div>
-
-            <div class="navigation_feedback js-carousel--simple-dots ">
-                <span class="navigation_feedback--point  "></span>
-                <span class="navigation_feedback--point  "></span>
-                <span class="navigation_feedback--point "></span>
-            </div>
-        </section>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div>
+            <img class="swiper-button-next" class="swiper-button-prev" src="assets/icon/arrow-right.png" alt="">
+        </div>
     </section>
-
-    <section id="duvidas" class="block_questions ">
-        <div class="limite">
-            <div class="block__questions_content">
-                <h3>Perguntas Frequentes</h3>
-                <div class="block__questions--itens">
-                    <div>
-                        <button class="button--questions">
-                            <img src="assets/src/icon/button-arrow1.png" alt="botão seta para baixo">
-                        </button>
-                        <h4>Como faço para obter o cartão de crédito?</h4>
-                    </div>
-                    <p class="resposta">Basta clicar no botão “Abrir Conta”, criar sua conta com nome completo,
-                        email e senha. Em
-                        seguida
-                        preencher o formulário para solicitar sua conta e o cartão de crédito.</p>
-                </div>
-                <hr class="line_questions">
-                <div class="block__questions--itens">
-                    <div>
-                        <button class="button--questions">
-                            <img src="assets/src/icon/button-arrow2.png" alt="botão seta para baixo">
-                        </button>
-                        <h4>Como Acompanhar o envio do meu cartão?</h4>
-                    </div>
-                    <p class="resposta">Após criar a conta e preencher o formulário aparecerá uma confirmação e
-                        aguardar nosso
-                        email para acompanhar a solicitação do cartão de crédito.</p>
-                </div>
-                <hr class="line_questions">
-                <div class="block__questions--itens">
-                    <div>
-                        <button class="button--questions">
-                            <img src="assets/src/icon/button-arrow1.png" alt="botão seta para baixo">
-                        </button>
-                        <h4>Preciso pagar anuidade desse cartão?</h4>
-                    </div>
-                    <p class="resposta">Não, nosso Gpay não possui anuidade.
-                </div>
-                <hr class="line_questions">
-                <div class="block__questions--itens">
-                    <div>
-                        <button class="button--questions">
-                            <img src="assets/src/icon/button-arrow2.png" alt="botão seta para baixo">
-                        </button>
-                        <h4>É possível fazer comprar internacionais ?</h4>
-                    </div>
-                    <p class="resposta">Sim, você pode usar o seu cartão para fazer comprar nacionais e
-                        internacionais com mais
-                        facilidade e com desconto em nossa loja google onde pode encontrar nossos produtos. </p>
-                </div>
-
-            </div>
+    <section id="questions" class="doubts">
+        <h3>Perguntas Frequentes</h3>
+        <div class="doubts-itens">
             <div>
+                <button class="button-doubts">
+                    <img src="assets/icon/button-arrow1.png" alt="botão seta para baixo">
+                    <span>Como faço para obter o cartão
+                        de crédito?</span>
+                </button>
+
+            </div>
+            <p id="resposta">Basta clicar no botão “Abrir Conta”, criar sua conta com nome completo,
+                email e senha. Em
+                seguida
+                preencher o formulário para solicitar sua conta e o cartão de crédito.</p>
+        </div>
+        <hr class="line-doubts">
+        <div class="doubts-itens">
+            <div>
+                <button class="button-doubts">
+                    <img src="assets/icon/button-arrow2.png" alt="botão seta para baixo">
+                    <span>Como Acompanhar o envio do meu cartão?</span>
+                </button>
+            </div>
+            <p id="resposta">Após criar a conta e preencher o formulário aparecerá uma confirmação e
+                aguardar nosso
+                email para acompanhar a solicitação do cartão de crédito.</p>
+        </div>
+        <hr class="line-doubts">
+        <div class="doubts-itens">
+            <div>
+                <button class="button-doubts">
+                    <img src="assets/icon/button-arrow1.png" alt="botão seta para baixo">
+                    <span>Preciso pagar anuidade desse cartão?</span>
+                </button>
+            </div>
+            <p id="resposta">Não, nosso Gpay não possui anuidade.
+        </div>
+        <hr class="line-doubts">
+        <div class="doubts-itens">
+            <div>
+                <button class="button-doubts">
+                    <img src="assets/icon/button-arrow2.png" alt="botão seta para baixo">
+                    <span>É possível fazer comprar internacionais ?</span>
+                </button>
+            </div>
+            <p id="resposta">Sim, você pode usar o seu cartão para fazer comprar nacionais e
+                internacionais com mais
+                facilidade e com desconto em nossa loja google onde pode encontrar nossos produtos. </p>
+        </div>
     </section>
-
-
-    <footer class="block__footer ">
-        <div class="block__footer--content limite">
-            <div class="block__redesSociais">
+    <footer>
+        <div class="content-footer">
+            <div class="container-social-media">
                 <h5>Redes Sociais</h5>
-                <div>
-                    <img src="assets/src/icon/github.png" alt="logo GitHub">
-                    <a href="#" class="titulo__redesSociais">
-                        <p>LinkedIn</p>
-                    </a>
-                </div>
-                <div>
-                    <img src="assets/src/icon/linkedin.png" alt="">
-                    <a href="#" class="titulo__redesSociais">
-                        <p>LinkedIn</p>
-                    </a>
-                </div>
+                <a href="#">
+                    <img src="assets/icon/github.png" alt="logo GitHub">
+                    LinkedIn
+                </a>
+                <a href="#">
+                    <img src="assets/icon/linkedin.png" alt="">
+                    LinkedIn
+                </a>
             </div>
 
-            <div class="block__avatar">
-                <div class="citacao">
+            <div class="quote">
+                <div class="quote-description">
                     <q>Esta Landingpage foi meticulosamente desenvolvida por mim como um
                         exercício de
                         aprimoramento
                         e prática contínua.</q>
-                    <p>Maria Fernanda</p>
+                    <p class="autor">Maria Fernanda</p>
                 </div>
                 <div>
-                    <img src="assets/src/image/meu-avatar.jpeg" alt="meu avatar pixel art garota programando">
+                    <img src="assets/image/meu-avatar.jpeg" alt="meu avatar pixel art garota programando">
                 </div>
             </div>
         </div>
-        <p class="made_by">Feito por Maria Fernanda 🖤</p>
+        <p class="made-by">Feito por Maria Fernanda 🖤</p>
     </footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-    <script src="assets/js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/js/script.js" defer></script>
 
 </body>
 

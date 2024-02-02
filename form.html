@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/src/favicon/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/form.min.css">
+
+    <title>Form</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Formulário de Cadastro</h1>
+        <p>Complete abaixo para pedir sua conta e cartão de crédito
+        </p>
+        <section class="container-form">
+            <form action="">
+                <fieldset>
+                    <span for="nome"> Nome</span>
+                    <br>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                    <br>
+
+                    <span for="sobrenome">Sobrenome</span>
+                    <br>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
+                    <br>
+
+                    <span for="email">Email</span>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email">
+                    <br>
+
+                    <span for="cpf">CPF</span>
+                    <br>
+                    <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF">
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <span for="date">Data de Nascimento</span>
+                    <br>
+                    <select name="day" id="day">
+                        <option value="dia">Dia</option>
+                        <option value="dia">1</option>
+                        <option value="dia">2</option>
+                        <option value="dia">3</option>
+                    </select>
+                    <select name="month" id="month">
+                        <option value="mes">Mês</option>
+                        <option value="mes">1</option>
+                        <option value="mes">2</option>
+                        <option value="mes">3</option>
+                    </select>
+                    <select name="year" id="year">
+                        <option value="year">Ano</option>
+                        <option value="year">1999</option>
+                        <option value="year">1999</option>
+                        <option value="year"></option>
+                    </select>
+                    <br>
+                    <span for="cep">Cep</span>
+                    <br>
+                    <input type="text" name="cep" id="cep" placeholder="Digite seu CEP">
+                    <br>
+
+                    <span for="endereço">Endereço</span>
+                    <br>
+                    <input type="text" name="endereço" id="endereço" placeholder="Digite seu Endereço">
+                    <br>
+                    <div class="city-uf">
+                        <div>
+                            <span for="cidade">Cidade</span> <br>
+                            <select name=" cidade" id="cidade">
+                                <option value="cidade">Selecionar</option>
+                                <option value="cidade">Planaltina</option>
+                                <option value="cidade">Formosa</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <span for="uf">UF</span> <br>
+                            <select name="uf" id="uf">
+                                <option value="uf">Selecionar</option>
+                                <option value="uf">GO</option>
+                                <option value="uf">DF</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="checkbox">
+                <div>
+                    <input class="option-checkbox" type="checkbox" name="checkbox" id="checkbox">
+                    <span for="">Aceito receber comunicações da Google por Whatsapp</span>
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <span for="">Eu li estou ciente dos termos e condições</span>
+                </div>
+            </div>
+            <input class="button-submit" type="submit" value="Confirmar">
+        </section>
+
+    </main>
+
+</body>
+
+</html>

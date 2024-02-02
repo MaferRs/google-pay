@@ -6,69 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/src/favicon/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/account.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="css/account.min.css">
+    <link rel="stylesheet" href="css/color.min.css">
     <title>Account</title>
 </head>
 
 <body>
-    <main class="block__creatAccount ">
-        <img src="assets/src/icon/google-icon-01.svg" alt="icone google">
-        <section class="block__creatAccount--content border ">
-            <div>
-                <img class="image__people-card" src="assets/src/image/people-card.svg" alt="pessoa segundo um cartão">
-            </div>
-            <div>
-                <form class="form" action="">
-                    <h1 class="title__creatAccount">Criar Conta</h1>
+    <header> <img src="assets/icon/google-icon-01.svg" alt="icone google"></header>
+    <section class="container-account">
+        <div>
+            <img class="people-card" src="assets/image/people-card.svg" alt="pessoa segundo um cartão">
+        </div>
+        <div>
+            <form class="form" action="">
+                <h1>Criar Conta</h1>
+                <fieldset>
+                    <label for="nome"> Nome</label> <br>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                    <br>
 
-                    <fieldset>
-                        <label class="label" for="nome"> Nome</label>
-                        <input class="input" type="text" name="nome" id="nome" placeholder="Digite seu nome">
-                        <br>
+                    <label for="sobrenome">Sobrenome</label><br>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
+                    <br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email">
+                    <br>
 
-                        <label class="label" for="sobrenome">Sobrenome</label>
-                        <input class="input" type="text" name="sobrenome" id="sobrenome"
-                            placeholder="Digite seu sobrenome">
-                        <br>
-                        <label class="label" for="email">Email</label>
-                        <br>
-                        <input class="input" type="email" name="email" id="email" placeholder="Digite seu email">
-                        <br>
+                    <div class="form-password">
+                        <fieldset>
+                            <label for="senha">Senha</label> <br>
+                            <input class="input inputItem" type="password" name="senha" id="senha"
+                                placeholder="Digite uma senha">
+                        </fieldset>
 
-                        <div class="form__item">
-                            <fieldset>
-                                <label class=" label " for="senha">Senha</label> <br>
-                                <input class="input inputItem" type="password" name="senha" id="senha"
-                                    placeholder="Digite uma senha">
-                            </fieldset>
+                        <fieldset>
+                            <label for="confirmar">Confirmar</label> <br>
+                            <input type="password" name="confirmar" id="confirmar" placeholder="Confirme a senha">
+                        </fieldset>
+                    </div>
 
-                            <fieldset>
-                                <label class="label" for="confirmar">Confirmar</label> <br>
-                                <input class="input inputItem" type="password" name="confirmar" id="confirmar"
-                                    placeholder="Confirme a senha">
-                            </fieldset>
-                        </div>
-
-                        <div class="form_button">
-                            <button type="submit" class="button_form gg">
-                                <img class="button_icon" src="assets/src/icon/google-icon-01.svg" alt="">
-                                <a href="https://www.google.com/intl/pt-BR/account/about/" target="_self">Entre com o
-                                    Google</a>
-                            </button>
-                            <button type="submit" class="button_form_enter">
-                                <a class="enter_text" href="#">Entrar</a>
-                            </button>
-                        </div>
-
-                    </fieldset>
-
-                </form>
-
-            </div>
-        </section>
-    </main>
-
+                    <div class="form-button">
+                        <a href="https://www.google.com/intl/pt-BR/account/about/" target="_self">
+                            <img src="assets/icon/google-icon-01.svg" alt="">Entre com o
+                            Google
+                        </a>
+                        <a class="to-send" href="form.html">Entrar</a>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
 </body>
 
 </html>
