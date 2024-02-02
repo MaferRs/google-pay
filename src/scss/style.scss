@@ -387,12 +387,24 @@ header {
       display: none;
       color: var(--lightGray);
       padding: 1rem 0;
+      animation: show 0.5s forwards;
     }
   }
   .line-doubts {
     width: 70%;
     margin-bottom: 1rem;
     border: 1px solid var(--lightGray2);
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: matrix3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
 
