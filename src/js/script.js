@@ -1,83 +1,53 @@
-const swiper = new Swiper('.swiper', {
-    slidesPerView: 6,
-
-    breakpoints: {
-
-        768: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-        },
-
-        1024: {
-            slidesPerView: 4,
-            spaceBetween: 50,
-        },
-    },
-
-    direction: 'horizontal',
-    loop: true,
-
-    pagination: {
-        el: '.swiper-pagination',
-        dynamicBullets: true,
-    },
-
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
-
 
 const dataFeedbacks = [
     {
         name: "Elizabeth Lizzie",
-        image: "/assets/avatar/elizabeth-lizzie.jpg",
+        image: "/assets/picture/elizabeth-lizzie.jpg",
         testimony: "Eu amei o cartão, muito prático e facilitou muito minha vida."
     },
     {
         name: "Malcolm Garret",
-        image: "/assets/avatar/malcolm-garret.jpg",
+        image: "/assets/picture/malcolm-garret.jpg",
         testimony: "Facilitou minhas compras internacionais."
     },
     {
         name: "Sam Jhay",
-        image: "/assets/avatar/sam-jhay.jpg",
+        image: "/assets/picture/sam-jhay.jpg",
         testimony: "Tenho usado ele para tudo e não quero nenhum outro."
     },
     {
         name: "Jonathan Poente",
-        image: "/assets/avatar/jonathan-del-poente.jpg",
+        image: "/assets/picture/jonathan-del-poente.jpg",
         testimony: "O beneficios são os melhores, uso e recomendo."
     },
     {
 
         name: "Elizabeth Lizzie",
-        image: "/assets/avatar/elizabeth-lizzie.jpg",
+        image: "/assets/picture/elizabeth-lizzie.jpg",
         testimony: "Eu amei o cartão, muito prático e facilitou muito minha vida."
     },
     {
 
         name: "Malcolm Garret",
-        image: "/assets/avatar/malcolm-garret.jpg",
+        image: "/assets/picture/malcolm-garret.jpg",
         testimony: "Facilitou minhas compras internacionais."
     },
     {
 
         name: "Sam Jhay",
-        image: "/assets/avatar/sam-jhay.jpg",
+        image: "/assets/picture/sam-jhay.jpg",
         testimony: "Tenho usado ele para tudo e não quero nenhum outro."
     },
     {
 
         name: "Jonathan Poente",
-        image: "/assets/avatar/jonathan-del-poente.jpg",
+        image: "/assets/picture/jonathan-del-poente.jpg",
         testimony: "O beneficios são os melhores, uso e recomendo."
     },
 
 ];
-const swiperWrapper = document.querySelector('.swiper-wrapper');
 
+const swiperWrapper = document.querySelector('.swiper-wrapper');
 
 dataFeedbacks.forEach((item) => {
 
@@ -93,8 +63,42 @@ dataFeedbacks.forEach((item) => {
     swiperWrapper.appendChild(slide);
 });
 
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
 
+        576: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 40
+        }
+    },
+
+    direction: 'horizontal',
+    loop: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
 swiper.update();
+
 
 
 // seção de perguntas e respostas.
