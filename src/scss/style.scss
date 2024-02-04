@@ -61,7 +61,8 @@ header {
 
   @media (max-width: 576px) {
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
+    padding: 2rem;
   }
 
   .box-animation {
@@ -71,13 +72,19 @@ header {
     overflow: hidden;
     padding: 2rem;
 
+    @media (max-width: 576px) {
+      width: 22rem;
+      height: 18rem;
+      padding: 1.5rem;
+    }
+
     h1 {
       font-size: 3.2rem;
       font-weight: 700;
       padding-bottom: 2.5rem;
 
       @media (max-width: 576px) {
-        font-size: 2rem;
+        font-size: 1.75rem;
       }
     }
 
@@ -86,12 +93,20 @@ header {
       font-weight: 600;
       padding-bottom: 2rem;
       color: var(--gray);
+
+      @media (max-width: 576px) {
+        font-size: 1rem;
+      }
     }
 
     p {
       font-size: 1.2rem;
       font-weight: 400;
       color: var(--lightGray);
+
+      @media (max-width: 576px) {
+        font-size: 0.85rem;
+      }
     }
 
     &::before {
@@ -111,6 +126,14 @@ header {
       );
       z-index: -3;
       animation: animateBorder 10s linear infinite;
+
+      @media (max-width: 576px) {
+        position: absolute;
+        bottom: -8rem;
+        left: 5rem;
+        width: 16rem;
+        height: 190%;
+      }
     }
 
     &::after {
@@ -139,6 +162,10 @@ header {
     width: 22rem;
     height: 25rem;
     animation: float 4s ease-in-out infinite;
+    @media (max-width: 576px) {
+      width: 15rem;
+      height: 18rem;
+    }
 
     @keyframes float {
       0%,
@@ -159,8 +186,17 @@ header {
   padding: 3.5rem 6rem;
   font-family: var(--openSans);
 
+  @media (max-width: 768px) {
+    padding: 2.5rem;
+  }
+
   .smartphone-google {
     width: 23rem;
+
+    @media (max-width: 768px) {
+      width: 18rem;
+      margin-bottom: 3rem;
+    }
   }
 
   .container-description {
@@ -168,7 +204,7 @@ header {
     height: 28rem;
 
     @media (max-width: 768px) {
-      margin-bottom: 10rem;
+      margin-bottom: 5rem;
     }
 
     span {
@@ -176,14 +212,14 @@ header {
       font-weight: 700;
 
       @media (max-width: 768px) {
-        font-size: 2rem;
+        font-size: 1.75rem;
       }
 
       .gpay-logo {
         width: 6.5rem;
 
         @media (max-width: 768px) {
-          font-size: 3.5rem;
+          width: 5rem;
         }
       }
     }
@@ -192,6 +228,10 @@ header {
       font-weight: 600;
       padding: 1.5rem 0;
       color: var(--lightGray);
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
     }
   }
   .list-functionalities > li {
@@ -201,7 +241,8 @@ header {
     color: var(--lightGray);
 
     @media (max-width: 768px) {
-      font-size: 1rem;
+      font-size: 0.85rem;
+      padding: 0 2rem;
     }
 
     &::before {
@@ -233,13 +274,17 @@ header {
   padding: 3.5rem 6rem;
   font-family: var(--openSans);
 
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
+
   h2 {
     font-size: 3.2rem;
     padding: 0 7rem;
 
     @media (max-width: 768px) {
       font-size: 2rem;
-      padding: 0 0 6rem 0;
+      padding: 0 0 3rem 0;
       text-align: center;
       order: 1;
     }
@@ -268,8 +313,9 @@ header {
       border-radius: 0.6rem;
 
       @media (max-width: 768px) {
-        height: 45rem;
+        height: 35rem;
         margin: 3rem 0 1rem;
+        width: 25rem;
         order: 3;
       }
 
@@ -279,14 +325,26 @@ header {
         font-size: 1.5rem;
         font-weight: 700;
 
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        }
+
         .icone {
           width: 2.5rem;
+
+          @media (max-width: 768px) {
+            width: 1.8rem;
+          }
         }
       }
 
       p {
         padding: 0 3rem;
         color: var(--gray);
+
+        @media (max-width: 768px) {
+          font-size: 0.85rem;
+        }
       }
 
       .line {
@@ -301,8 +359,10 @@ header {
   .card {
     width: 25rem;
     @media (max-width: 768px) {
-      margin-top: 3rem;
-      width: 22.5rem;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      width: 18rem;
     }
   }
 
@@ -348,13 +408,18 @@ header {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
   height: 40rem;
-  padding: 3.5rem;
+
   font-family: var(--openSans);
 
   @media (max-width: 768px) {
-    gap: 1.5rem;
-    height: 45rem;
+    display: flex;
+    justify-content: center;
+    height: 35rem;
+    gap: 1rem;
   }
 
   h3 {
@@ -364,49 +429,56 @@ header {
     padding: 2.5rem 0;
 
     @media (max-width: 768px) {
-      font-size: 2rem;
-      padding: 0;
+      font-size: 1.7rem;
+      padding: 1rem;
     }
   }
+  .swiper {
+    max-width: 80rem;
+    width: 100%;
+    margin: 1rem;
 
-  .swiper-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 74rem;
-    height: 20rem;
-    gap: 3rem;
-    margin: 2rem;
+    @media (max-width: 768px) {
+      max-width: 20rem;
+      width: 100%;
+      padding: 0 2rem;
+      height: 18rem;
+    }
 
-    .swiper-slide {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 16rem;
-      height: 16rem;
-      background-color: var(--background);
-      border-radius: 0.5rem;
-      box-shadow: var(--shadow);
+    .swiper-wrapper {
+      width: 40rem;
+      height: 20rem;
 
       @media (max-width: 768px) {
-        max-width: 14rem;
-        height: 16rem;
+        max-width: 15rem;
+        width: 100%;
+        height: 18rem;
       }
 
-      img {
-        width: 4rem;
-        height: 4rem;
-        margin: 1.2rem;
-        border-radius: 50%;
-      }
+      .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 17rem;
+        background-color: var(--background);
+        border-radius: 0.5rem;
+        box-shadow: var(--shadow);
 
-      h2 {
-        font-size: 1rem;
-      }
+        img {
+          width: 5rem;
+          height: 5rem;
+          margin: 1.2rem;
+          border-radius: 50%;
+        }
 
-      p {
-        text-align: center;
-        padding: 2rem;
+        h2 {
+          font-size: 1rem;
+        }
+
+        p {
+          text-align: center;
+          padding: 2rem;
+        }
       }
     }
   }
@@ -414,7 +486,7 @@ header {
   .swiper-button-prev,
   .swiper-button-next {
     position: absolute;
-    top: 60%;
+    top: 52.5%;
     width: 1rem;
     height: 1.5rem;
     margin: 0 3rem 0;
@@ -433,17 +505,25 @@ header {
   background-color: var(--background);
   padding: 6rem;
 
+  @media (max-width: 768px) {
+    padding: 3rem;
+  }
+
   h3 {
     font-size: 3.2rem;
     font-weight: 700;
     padding-bottom: 2.5rem;
 
     @media (max-width: 768px) {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
   .doubts-itens {
     width: 40rem;
+
+    @media (max-width: 768px) {
+      width: 15rem;
+    }
 
     .button-doubts {
       border: none;
@@ -463,8 +543,8 @@ header {
       padding: 1rem 0;
       animation: show 0.5s forwards;
 
-      @media (max-width: 576px) {
-        max-width: 22rem;
+      @media (max-width: 768px) {
+        width: 22rem;
       }
     }
   }
