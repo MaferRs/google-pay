@@ -41,11 +41,20 @@ header {
     padding: 0.8rem;
     border-radius: 0.5em;
     box-shadow: -0.2rem 0.2rem 0.5rem var(--green);
+
+    @media (max-width: 768px) {
+      width: 20rem;
+      height: 2rem;
+    }
   }
   .button-account a {
     color: var(--white);
     font-weight: 600;
     font-size: 1rem;
+
+    @media (max-width: 768px) {
+      font-size: 0.75rem;
+    }
   }
 }
 
@@ -481,6 +490,11 @@ header {
         }
       }
     }
+    .swiper-pagination {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
   }
 
   .swiper-button-prev,
@@ -522,7 +536,7 @@ header {
     width: 40rem;
 
     @media (max-width: 768px) {
-      width: 15rem;
+      width: 20rem;
     }
 
     .button-doubts {
@@ -530,6 +544,10 @@ header {
       cursor: pointer;
       padding: 1rem 0;
       background-color: var(--background);
+
+      @media (max-width: 768px) {
+        width: 25rem;
+      }
 
       span {
         font-size: 1rem;
@@ -545,13 +563,18 @@ header {
 
       @media (max-width: 768px) {
         width: 22rem;
+        font-size: 0.85rem;
       }
     }
   }
   .line-doubts {
-    width: 70%;
+    width: 64rem;
     margin-bottom: 1rem;
     border: 1px solid var(--lightGray2);
+
+    @media (max-width: 768px) {
+      width: 25rem;
+    }
   }
 }
 
@@ -616,11 +639,14 @@ footer {
 
         @media (max-width: 768px) {
           order: 3;
-          max-width: 25rem;
+          padding: 3rem;
         }
 
         q {
           font-size: 1.2rem;
+          @media (max-width: 768px) {
+            font-size: 1rem;
+          }
         }
 
         .autor {
@@ -637,6 +663,8 @@ footer {
         @media (max-width: 768px) {
           order: 2;
           margin: 2rem;
+          width: 10rem;
+          height: 10rem;
         }
       }
     }
