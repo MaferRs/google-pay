@@ -671,6 +671,9 @@ header {
         font-weight: 600;
         padding: 1rem;
       }
+      @media (max-width: 580px) {
+        padding: 0;
+      }
     }
 
     p {
