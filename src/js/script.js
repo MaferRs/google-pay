@@ -64,12 +64,24 @@ dataFeedbacks.forEach((item) => {
 });
 
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 1,
-    spaceBetween: 10,
+    slidesPerView: 5,
+    loopAdditionalSlides: 3,
+    loop: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
     breakpoints: {
 
         576: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 20
         },
 
@@ -84,18 +96,7 @@ const swiper = new Swiper('.swiper', {
         }
     },
 
-    direction: 'horizontal',
-    loop: true,
 
-    pagination: {
-        el: '.swiper-pagination',
-        dynamicBullets: true,
-    },
-
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
 });
 swiper.update();
 
@@ -105,7 +106,7 @@ swiper.update();
 
 function faq() {
 
-    var buttons = document.querySelectorAll('.button-doubts')
+    var buttons = document.querySelectorAll('.button-faq')
     var respostas = document.querySelectorAll('#resposta')
 
     respostas[0].style.display = "block";

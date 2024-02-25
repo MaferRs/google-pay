@@ -22,39 +22,40 @@
     <header>
         <img class="logo" src="assets/icon/google-icon-01.svg" alt="icone da google">
         <nav>
-            <a class="navbar-item" href="#about">Sobre GPay</a>
-            <a class="navbar-item" href="#functionalities">Funcionalidades</a>
-            <a class="navbar-item" href="#benefits">Benefícios</a>
-            <a class="navbar-item" href="#doubts">Dúvidas</a>
+            <a href="#about">Sobre GPay</a>
+            <a href="#functionalities">Funcionalidades</a>
+            <a href="#benefits">Benefícios</a>
+            <a href="#faq">Dúvidas</a>
         </nav>
         <button class="button-account">
             <a href="account.html">Abrir Conta</a>
             <img src="assets/icon/icon-usuario.svg" alt="icone de usuario">
         </button>
     </header>
-    <main id="about" class="presentation">
-        <div class="box-animation content-animation">
+
+    <main id="about" class="about">
+        <div class="about-animation">
             <h1>Google PayCard</h1>
             <h3>Sobre nosso cartão</h3>
             <p>O Gpay Card foi criado para você que curte inovação e praticidade. O novo cartão da
                 Google chegou para te garantir conforto e uma experiência única.</p>
         </div>
-        <div class="container-gpay">
+        <div>
             <img class="card-gpay" src="assets/image/card-gpay.png" alt="cartçao frente e verso">
         </div>
     </main>
+
     <section id="functionalities" class="functionalities">
-        <div>
-            <img data-aos="fade-right" class="smartphone-google" src="assets/image/google-pixel-app.svg"
-                alt="smartphone google pixel 6A com app na tela">
-        </div>
+        <img data-aos="fade-right" src="assets/image/google-pixel-app.svg"
+            alt="smartphone google pixel 6A com app na tela">
         <div class="container-description">
-            <span>Funcionalidades
-                <img class="gpay-logo" src="assets/image/Gpay-logo.png">
-            </span>
+            <div class="description-title">
+                <span>Funcionalidades </span>
+                <img src="assets/image/Gpay-logo.png">
+            </div>
             <p>O google Pay é a maneira mais rápida e simples de
                 fazer pagamentos em milhões de lugares.</p>
-            <ul class="list-functionalities">
+            <ul>
                 <li>Usar seu smartphone para pagar suas contas;</li>
                 <li>Fazer pagamentos em apps ou sites;</li>
                 <li>Oferece recompensas em dinheiro quando ativa ofertas das compras
@@ -66,75 +67,74 @@
             </ul>
         </div>
     </section>
+
     <section id="benefits" class="benefits">
-        <h2 class="limite">Benefícios PayCard</h2>
+        <h2>Benefícios PayCard</h2>
         <div class="container-benefits">
             <aside>
                 <div>
-                    <span>
-                        <img class="icone" src="assets/icon/cashback.svg" alt="cashback">
-                        Cashback
-                    </span>
+                    <div class="container-subtitle">
+                        <img src="assets/icon/cashback.svg" alt="cashback">
+                        <span> Cashback</span>
+                    </div>
                     <p>Benefícios de cashback de 1% em todas as compras com o cartão e de 3% em compras e
                         serviços da Google.</p>
                     <hr class="line">
                 </div>
 
                 <div>
-                    <span>
-                        <img class="icone" src="assets/icon/shield.svg" alt="segurança">
-                        Segurança
-                    </span>
+                    <div class="container-subtitle">
+                        <img src="assets/icon/shield.svg" alt="segurança">
+                        <span> Segurança </span>
+                    </div>
                     <p>Google Pay protege suas informações de pagamento e sua conta com uma das
                         infraestruturasde segurança mais avançadas do mundo.</p>
                     <hr class="line">
                 </div>
 
                 <div>
-                    <span>
-                        <img class="icone" src="assets/icon/cashless-payment 1.svg" alt="praticidade">
-                        Praticidade
-                    </span>
+                    <div class="container-subtitle">
+                        <img src="assets/icon/cashless-payment 1.svg" alt="praticidade">
+                        <span> Praticidade </span>
+                    </div>
                     <p>O seu cartão ajuda você a ter uma visão mais clara das suas finanças, pois você pode
                         sincronizar
                         suas contas, acompanhar seus gastos e pesquisar suas transações de forma fácil.</p>
                 </div>
             </aside>
+
             <div class="card-flip-container">
                 <div class="flipper">
                     <div class="front">
-                        <div class=" box box-front">
-                            <img class="card" src="assets/image/card-front.svg" alt="cartão de crédito parte da frente">
-                        </div>
+                        <img src="assets/image/card-front.svg" alt="cartão de crédito parte da frente">
                     </div>
                     <div class="back">
-                        <div class="box box-back">
-                            <img class="card" src="assets/image/card-back.svg" alt="cartão de crédito parte da frente">
-                        </div>
+                        <img src="assets/image/card-back.svg" alt="cartão de crédito parte da frente">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="feedback">
         <h3>Feedbacks dos Clientes </h3>
-        <div>
-            <img class="swiper-button-prev" src="assets/icon/arrow-left.png" alt="">
-        </div>
+
         <div class="swiper">
             <div class="swiper-wrapper">
             </div>
             <div class="swiper-pagination"></div>
         </div>
         <div>
-            <img class="swiper-button-next" src="assets/icon/arrow-right.png" alt="">
+            <button><img class="swiper-button-prev" src="assets/icon/arrow-left.png" alt=""></button>
+            <button> <img class="swiper-button-next" src="assets/icon/arrow-right.png" alt=""></button>
         </div>
     </section>
-    <section id="questions" class="doubts">
+
+    <section id="faq" class="faq">
         <h3>Perguntas Frequentes</h3>
-        <div class="doubts-itens">
+        <div class="faq-itens">
             <div>
-                <button class="button-doubts">
+                <button class="button-faq">
                     <img src="assets/icon/button-arrow1.png" alt="botão seta para baixo">
                     <span>Como faço para obter o cartão
                         de crédito?</span>
@@ -147,9 +147,9 @@
                 preencher o formulário para solicitar sua conta e o cartão de crédito.</p>
         </div>
         <hr class="line-doubts">
-        <div class="doubts-itens">
+        <div class="faq-itens">
             <div>
-                <button class="button-doubts">
+                <button class="button-faq">
                     <img src="assets/icon/button-arrow2.png" alt="botão seta para baixo">
                     <span>Como Acompanhar o envio do meu cartão?</span>
                 </button>
@@ -159,9 +159,9 @@
                 email para acompanhar a solicitação do cartão de crédito.</p>
         </div>
         <hr class="line-doubts">
-        <div class="doubts-itens">
+        <div class="faq-itens">
             <div>
-                <button class="button-doubts">
+                <button class="button-faq">
                     <img src="assets/icon/button-arrow1.png" alt="botão seta para baixo">
                     <span>Preciso pagar anuidade desse cartão?</span>
                 </button>
@@ -169,9 +169,9 @@
             <p id="resposta">Não, nosso Gpay não possui anuidade.
         </div>
         <hr class="line-doubts">
-        <div class="doubts-itens">
+        <div class="faq-itens">
             <div>
-                <button class="button-doubts">
+                <button class="button-faq">
                     <img src="assets/icon/button-arrow2.png" alt="botão seta para baixo">
                     <span>É possível fazer comprar internacionais ?</span>
                 </button>
